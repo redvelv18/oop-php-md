@@ -7,8 +7,10 @@ class Car {
     private $vehicleType = "car";
 
     // Constructor
-    public function __construct($brand, $color) {
+    public function __construct($brand, $color = "none") {
         $this->brand = $brand;
         $this->color = $color;
     }
 }
+
+$car01 = new Car("Volvo", "Red");
