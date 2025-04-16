@@ -4,7 +4,7 @@ class Car {
     //Properties / Fields
     private $brand;
     private $color;
-    private $vehicleType = "car";
+    public $vehicleType = "car";
 
     // Constructor
     public function __construct($brand, $color = "none") {
@@ -14,3 +14,4 @@ class Car {
 }
 
 $car01 = new Car("Volvo", "Red");
+echo $car01->vehicleType;
